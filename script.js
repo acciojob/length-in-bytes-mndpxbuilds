@@ -1,10 +1,6 @@
 const byteSize = (str) => {
   // write your code here
-	let count = 0;
-	for(let i=0; i<str.length; i++){
-		count++;
-	}
-	console.log(count);
+	return new TextEncoder().encode(str).length;
 };
 
 // Do not change the code below
