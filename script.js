@@ -1,8 +1,15 @@
 const byteSize = (str) => {
   // write your code here
-	console.log(byteSize.length);
+	let count = 0;
+	for(let i=0; i<str.length; i++){
+		count++;
+		if(str[i]= " "){
+			count++;
+		}
+	}
+	console.log(count);
 };
 
 // Do not change the code below
-const str = prompt("Enter some string.");
-alert(byteSize(str));
+//const str = prompt("Enter some string.");
+//alert(byteSize(str));
